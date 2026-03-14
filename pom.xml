@@ -64,5 +64,22 @@
     </plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+
+  <!-- Repository for release versions -->
+  <repository>
+    <id>local-releases</id>
+    <name>Company Release Repository</name>
+    <url>file:///home/sumanth/local-maven-repo/releases/</url>
+  </repository>
+
+  <!-- Repository for snapshot versions -->
+  <snapshotRepository>
+    <id>local-snapshots</id>
+    <name>Company Snapshot Repository</name>
+    <url>file:///home/sumanth/local-maven-repo/snapshots</url>
+  </snapshotRepository>
+
+</distributionManagement>
 
 </project>
